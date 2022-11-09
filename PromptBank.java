@@ -3,11 +3,13 @@ import java.util.List;
 
 public class PromptBank {
     List<Prompt> PromptList;
-    Course Course;
 
-    public PromptBank(List<Prompt> promptList, Course course){
+    public PromptBank(List<Prompt> promptList){
         PromptList = promptList;
-        Course = course;
+
+    }
+    public List<Prompt> getPrompts(){
+        return PromptList;
     }
 
 }
